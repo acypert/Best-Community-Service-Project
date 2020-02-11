@@ -7,7 +7,8 @@ function App() {
   return (
     <div className="App">
       <MenuHeader/>
-      <Service/>
+      <Service name={"Horseshoes"} ispaid={"Free Service"} description={"This service is amazing."}/>
+      <Service name={"Gazebo"} ispaid={"Paid Service"} description={"You will not regret this service."}/>
     </div>
   );
 }

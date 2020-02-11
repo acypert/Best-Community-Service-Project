@@ -4,21 +4,29 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import React from "react";
+import Image from "react-bootstrap/Image";
 
-function Service() {
+function Service(props) {
     return (
-        <Container>
+        <Container style={{marginTop: "10px"}}>
             <Row>
                 <Col></Col>
                 <Col sm={8}>
                     <Card>
-                        <Card.Header>Featured</Card.Header>
+                        <Card.Header style={{textAlign: "left"}}>{props.ispaid}</Card.Header>
                         <Card.Body>
-                            <Card.Title>Special title treatment</Card.Title>
-                            <Card.Text>
-                                With supporting text below as a natural lead-in to additional content.
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+                            <Row>
+                                <Col xs={6} md={4}>
+                                    <Image src="../logo192.png" rounded />
+                                </Col>
+                                <Col style={{textAlign: "right", verticalAlign: "bottom"}}>
+                                    <Card.Title>{props.name}</Card.Title>
+                                    <Card.Text>
+                                        {props.description}
+                                    </Card.Text>
+                                    <Button variant="primary">Book</Button>
+                                </Col>
+                            </Row>
                         </Card.Body>
                     </Card>
                 </Col>

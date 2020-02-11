@@ -9,7 +9,7 @@ import Container from "react-bootstrap/Container";
 
 function MenuHeader() {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand="lg" style={{marginBottom: "50px"}}>
             <Container>
                 <Navbar.Brand href="#home">Best Community Service</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
