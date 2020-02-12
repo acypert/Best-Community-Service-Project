@@ -5,11 +5,10 @@ import Service from "./views/Service";
 
 function App() {
   return (
-    <div className="App">
-      <MenuHeader/>
-      <Service name={"Horseshoes"} ispaid={"Free Service"} description={"This service is amazing."}/>
-      <Service name={"Gazebo"} ispaid={"Paid Service"} description={"You will not regret this service."}/>
-    </div>
+          <div className="App">
+              <Service name={"Horseshoes"} ispaid={"Free Service"} description={"This service is amazing."}/>
+              <Service name={"Gazebo"} ispaid={"Paid Service"} description={"You will not regret this service."}/>
+          </div>
   );
 }
 
