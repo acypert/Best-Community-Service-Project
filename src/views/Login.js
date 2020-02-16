@@ -12,7 +12,7 @@ function Login() {
         <Container>
             <Row>
                 <Col />
-                <Col sm={4}>
+                <Col lg={4}>
                     <Card>
                         <Card.Header as="h5">Login</Card.Header>
                         <Card.Body>
@@ -28,7 +28,6 @@ function Login() {
                                         aria-describedby="basic-addon1"
                                     />
                                 </InputGroup>
-
                                 <InputGroup className="mb-3">
                                     <InputGroup.Prepend>
                                         <InputGroup.Text id="basic-addon1">Password</InputGroup.Text>
@@ -40,7 +39,7 @@ function Login() {
                                     />
                                 </InputGroup>
                             </Card.Text>
-                            <Button variant="primary">Login</Button>
+                            <Button variant="primary" block>Login</Button>
                         </Card.Body>
                     </Card>
                 </Col>

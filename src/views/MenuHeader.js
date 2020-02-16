@@ -11,11 +11,11 @@ function MenuHeader() {
     return (
         <Navbar bg="light" expand="lg" style={{marginBottom: "50px"}}>
             <Container>
-                <Navbar.Brand href="#home">Best Community Service</Navbar.Brand>
+                <Navbar.Brand href="/home">Best Community Service</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
+                        <Nav.Link href="/home">Home</Nav.Link>
                         <NavDropdown title="Services" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">All Services</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Free Services</NavDropdown.Item>
@@ -27,8 +27,9 @@ function MenuHeader() {
                     <Form inline>
                         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                         <Button variant="outline-success">Search</Button>
+                        <Button style={{marginLeft: "8px"}} href={"/login"}>Sign In</Button>
+                        <Button variant="secondary" style={{marginLeft: "8px"}} href={"/register"}>Register</Button>
                     </Form>
-                    <Button style={{marginLeft: "8px"}}>Sign In</Button>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

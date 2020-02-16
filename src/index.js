@@ -14,6 +14,8 @@ import {
     Link
 } from "react-router-dom";
 import MenuHeader from "./views/MenuHeader";
+import Register from "./views/Register";
+import Registered from "./views/Registered";
 
 const routing = (
     <Router>
@@ -25,6 +27,8 @@ const routing = (
             {/*<Route exact path={"/home"} component={}*/}
             <Route exact path={"/login"} component={Login} />
             <Route exact path={"/home"} component={App} />
+            <Route exact path={"/register"} component={Register} />
+            <Route exact path={"/registered"} component={Registered} />
         </Switch>
     </Router>
 );
