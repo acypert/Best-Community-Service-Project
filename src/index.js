@@ -19,6 +19,12 @@ import Registered from "./views/Registered";
 import Rentals from "./views/Rentals";
 import Events from "./views/Events";
 import Donation from "./views/Donation";
+import DonationThanks from "./views/DonationThanks";
+import PaidServices from "./views/PaidServices";
+import BookedService from "./views/BookedService";
+import BookedEvent from "./views/BookedEvent";
+import BookedRental from "./views/BookedRental";
+import FreeServices from "./views/FreeServices";
 
 const routing = (
     <Router>
@@ -31,11 +37,17 @@ const routing = (
             {/*<Route exact path={"/home"} component={}*/}
             <Route exact path={"/login"} component={Login} />
             <Route exact path={"/services"} component={Services} />
+            <Route exact path={"/paidservices"} component={PaidServices} />
+            <Route exact path={"/freeservices"} component={FreeServices} />
             <Route exact path={"/register"} component={Register} />
             <Route exact path={"/registered"} component={Registered} />
             <Route exact path={"/rentals"} component={Rentals} />
             <Route exact path={"/events"} component={Events} />
             <Route exact path={"/donation"} component={Donation} />
+            <Route exact path={"/thanksforyourdonation"} component={DonationThanks} />
+            <Route exact path={"/bookedservice"} component={BookedService} />
+            <Route exact path={"/bookedevent"} component={BookedEvent} />
+            <Route exact path={"/bookedrental"} component={BookedRental} />
         </Switch>
     </Router>
 );

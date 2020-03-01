@@ -5,6 +5,7 @@ import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
+import {Link} from "react-router-dom";
 
 function Rental(props) {
     return (
@@ -21,7 +22,9 @@ function Rental(props) {
                             <Card.Text>
                                 {props.description}
                             </Card.Text>
-                            <Button variant="primary">Rent {props.price}</Button>
+                            <Link to={"/bookedrental"}>
+                                <Button variant="primary">Rent {props.price}</Button>
+                            </Link>
                         </Col>
                     </Row>
                 </Card.Body>

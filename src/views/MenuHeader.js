@@ -24,6 +24,7 @@ function MenuHeader() {
                             </NavDropdown>
                             <Nav.Link href="/events">Events</Nav.Link>
                             <Nav.Link href="/rentals">Rentals</Nav.Link>
+                            <Nav.Link href="/donation">Donations</Nav.Link>
                         </Nav>
                         <Form inline>
                             <FormControl type="text" placeholder="Search" className="mr-sm-2" />

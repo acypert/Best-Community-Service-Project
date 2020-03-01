@@ -5,6 +5,7 @@ import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
+import {Link} from "react-router-dom";
 
 function Event(props) {
     return (
@@ -25,7 +26,9 @@ function Event(props) {
                                         <Card.Text>
                                             {props.description}
                                         </Card.Text>
-                                        <Button variant="primary">Join the Fun ${props.price}</Button>
+                                        <Link to={"/bookedevent"}>
+                                            <Button variant="primary">Join the Fun ${props.price}</Button>
+                                        </Link>
                                     </Col>
                                 </Row>
                             </Card.Body>

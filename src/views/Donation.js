@@ -5,6 +5,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Jumbotron from "react-bootstrap/Jumbotron";
+import {Link} from "react-router-dom";
 
 
 class Donation extends React.Component {
@@ -35,9 +36,11 @@ class Donation extends React.Component {
                                         Your donations keep us going
                                     </Form.Text>
                                 </Form.Group>
-                                <Button variant="primary" type="submit">
-                                    Donate
-                                </Button>
+                                <Link to="/thanksforyourdonation">
+                                    <Button variant="primary" type="submit">
+                                        Donate
+                                    </Button>
+                                </Link>
                             </Form>
                         </Col>
                         <Col lg={1} />
