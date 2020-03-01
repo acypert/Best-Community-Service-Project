@@ -17,7 +17,7 @@ function Service(props) {
                         <Card.Body>
                             <Row>
                                 <Col xs={6} md={4}>
-                                    <Image src="../logo192.png" rounded />
+                                    <Image src={props.imageUrl} style={{width: "192px"}} rounded />
                                 </Col>
                                 <Col style={{textAlign: "right", verticalAlign: "bottom"}}>
                                     <Card.Title>{props.name}</Card.Title>

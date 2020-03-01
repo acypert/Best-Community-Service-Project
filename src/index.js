@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Services from './views/Services';
 import * as serviceWorker from './serviceWorker';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,6 +16,9 @@ import {
 import MenuHeader from "./views/MenuHeader";
 import Register from "./views/Register";
 import Registered from "./views/Registered";
+import Rentals from "./views/Rentals";
+import Events from "./views/Events";
+import Donation from "./views/Donation";
 
 const routing = (
     <Router>
@@ -23,12 +26,16 @@ const routing = (
         {/*<App />*/}
 
         <Switch>
-            <Redirect exact path={"/"} to={"/home"}/>
+            <Redirect exact path={"/"} to={"/services"}/>
+            <Redirect exact path={"/home"} to={"/services"}/>
             {/*<Route exact path={"/home"} component={}*/}
             <Route exact path={"/login"} component={Login} />
-            <Route exact path={"/home"} component={App} />
+            <Route exact path={"/services"} component={Services} />
             <Route exact path={"/register"} component={Register} />
             <Route exact path={"/registered"} component={Registered} />
+            <Route exact path={"/rentals"} component={Rentals} />
+            <Route exact path={"/events"} component={Events} />
+            <Route exact path={"/donation"} component={Donation} />
         </Switch>
     </Router>
 );
